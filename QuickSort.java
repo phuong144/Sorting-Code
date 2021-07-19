@@ -56,23 +56,27 @@ public class QuickSort {
  		int min = 1;
  		int[] A = new int[11];
 	   //int[] A = {15, 3, 2, 1, 9, 5, 7, 8, 6};
-     for(int i=0; i<11; i++){
- 			A[i] = (int) ((Math.random() * range) + min);
- 		}
-	   //int[] A = {5, 7, 3, 2, 4, 1};
-     //int[] A = {4,1,2,3};
-	   int start =  0;
-	   int end = A.length - 1;
 
-	   for(int i=0; i<A.length; i++) {
-		   System.out.print(A[i] + ", ");
-	   }
-	   System.out.println("");
+	   for (int j=0; j<5; j++) {
+			for(int i=0; i<11; i++){
+					A[i] = (int) ((Math.random() * range) + min);
+				}
+			//int[] A = {5, 7, 3, 2, 4, 1};
+			//int[] A = {4,1,2,3};
+			int start =  0;
+			int end = A.length - 1;
 
-	   quicksort(A ,start, end);
+			for(int i=0; i<A.length; i++) {
+				System.out.print(A[i] + ", ");
+			}
+			System.out.println("");
 
-	   for(int i=0; i<A.length; i++) {
-		   System.out.print(A[i] + ", ");
-	   }
+			quicksort(A ,start, end);
+
+			for(int i=0; i<A.length; i++) {
+				System.out.print(A[i] + ", ");
+			}
+			System.out.println("");
+		}
    }
 }
